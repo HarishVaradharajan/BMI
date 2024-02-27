@@ -1,0 +1,17 @@
+height = float(input("Enter the height in cm: "))  
+weight = float(input("Enter the weight in kg: "))
+BMI = weight / (height/100)**2
+print("Your Body Mass Index is", BMI) 
+if BMI <= 18.5:  
+    print("Oops! You are underweight.")  
+elif BMI <= 24.9:  
+    print("Awesome! You are healthy.")  
+elif BMI <= 29.9:  
+    print("Eee! You are overweight.")  
+else:  
+    print("Seesh! You are obese.") 
+ans=input("you want diet ?")
+if ans=="yes" or "Yes":
+    ans1=input("you want diet for? \n underweight \n overweight \n obese:")
+    if ans1=="underweight" or "Underweight":
+      print(""" \t Monday\t\n Breakfast (8:00-8:30AM)	2 egg brown bread sandwich + green chutney + 1 cup milk + 3 cashews + 4 almonds + 2 walnuts \n Mid-Meal (11:00-11:30AM)	1 cup banana shake \n Lunch (2:00-2:30PM)	1 cup arhar dal + 1 cup potato curry + 3 chapatti + 1/2 cup rice + 1/2 cup low fat curd + salad \n Evening (4:00-4:30PM)	1 cup strawberry smoothie + 1 cup vegetable poha \n Dinner (8:00-8:30PM)	1.5 cup chicken curry + 3 chapatti + salad""")
